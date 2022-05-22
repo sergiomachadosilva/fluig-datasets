@@ -15,6 +15,6 @@ Clique o botão "Novo serviço" na tela seguinte no campo Serviço, selecione a 
 
 ## Imagem
 
-![Tela Serviço](https://github.com/sergiomachadosilva/fluig-datasets/blob/main/dsConsultaCEP/tela_servico.png)
+![Tela Serviço](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsConsultaCEP/tela_servico.png)
 
 [Veja aqui o código do dataset](dsConsultaCEP.js)
