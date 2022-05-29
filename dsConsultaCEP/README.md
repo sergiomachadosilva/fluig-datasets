@@ -1,4 +1,4 @@
-# Retorna informações de endereço com base no CEP.
+# Retorna informações de endereço com base no CEP
 
 Para utilizar este dataset primeiro terá que cadastrar o serviço no Fluig, em Paninel de Controle > Serviços.
 Clique o botão "Novo serviço" na tela seguinte no campo Serviço, selecione a opção REST. E informe os dados conforme abaixo:
@@ -45,7 +45,7 @@ if (!data[0].ERROR) {
 
 ## Retorno em caso de sucesso
 
-Caso seu cep seja encontrado, o dataset irá retornar as seguinte colunas:
+Caso o CEP informado seja encontrado, o dataset irá retornar as seguinte colunas:
 
 | CEP      | ENDERECO               | COMPLEMENTO | BAIRRO                     | CIDADE   | ESTADO | DDD | IBGE    | SIAFI |
 | -------- | ---------------------- | ----------- | -------------------------- | -------- | ------ | --- | ------- | ----- |
