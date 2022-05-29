@@ -25,8 +25,13 @@ Clique o botão "Novo serviço" na tela seguinte no campo Serviço, selecione a 
 
 _Você está livre para informar o valor do CEP formatado ou não, o dataset se encarregará de remover tudo o que não for número._
 
-```
-const cCep = DatasetFactory.createConstraint("CEP", "70150900", null, ConstraintType.MUST);
+```js
+const cCep = DatasetFactory.createConstraint(
+  "CEP",
+  "70150900",
+  null,
+  ConstraintType.MUST
+);
 
 //Busca dados do dataset
 const dataset = DatasetFactory.getDataset("dsConsultaCEP", null, [cCep], null);
