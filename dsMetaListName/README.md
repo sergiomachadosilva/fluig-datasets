@@ -2,7 +2,7 @@
 
 Este dataset tem como objetivo retornar o nome da tabela no banco de dados de um formulário.
 
-_Um formulário configurado para armazenar seus dados em tabelas múltiplas, quando exportado criará uma nova tabela no banco de dados cujo nome seguirá o padrão MLEEELLL, onde EEE representa o código da empresa precedido por zeros e LLL representa o código da lista (gerado de forma sequencial pela plataforma) também precedido por zeros._
+_"Um formulário configurado para armazenar seus dados em tabelas múltiplas, quando exportado criará uma nova tabela no banco de dados cujo nome seguirá o padrão MLEEELLL, onde EEE representa o código da empresa precedido por zeros e LLL representa o código da lista (gerado de forma sequencial pela plataforma) também precedido por zeros."_
 
 ![Esquema](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsMetaListName/esquema.png)
 
