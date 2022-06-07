@@ -6,7 +6,15 @@ _"Um formulário configurado para armazenar seus dados em tabelas múltiplas, qu
 
 ![Esquema](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsMetaListName/esquema.png)
 
-Para mais detalhes acesse a documentação: [Modelos de Armazenamento de Formulários](https://tdn.totvs.com/pages/releaseview.action?pageId=244716710)
+Para mais detalhes acesse os link abaixo:
+
+- [Modelos de Armazenamento de Formulários](https://tdn.totvs.com/pages/releaseview.action?pageId=244716710)
+
+- [Parâmetros em eventos de Processos](https://tdn.totvs.com/pages/releaseview.action?pageId=270919174)
+
+- [FormController ](https://tdn.totvs.com/pages/releaseview.action?pageId=662892312)
+
+Veja também este vídeo onde demonstro na prática: https://youtu.be/CLeEvKn0Syo
 
 ## Chamando o dataset em um arquivo js do formulário
 
@@ -47,7 +55,7 @@ Caso não ocorra nenhum erro o dataset irá retornar as seguinte colunas:
 
 | CODIGO | TABELA   |
 | ------ | -------- |
-| 3765   | ML001004 |
+| 3765   | ML001021 |
 
 ## Retorno em caso de erro
 
