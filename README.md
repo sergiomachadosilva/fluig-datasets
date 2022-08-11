@@ -5,3 +5,4 @@ Aqui consta uma lista de alguns datasets que disponibilizei pra vocês, espero q
 
 - [Consultar CEP](dsConsultaCEP/README.md)
 - [Retorna nome da tabela do formulário no banco de dados](dsMetaListName/README.md)
+- [Enviar e-mail com anexos no Fluig](dsEnviarEmailComAnexos/README.md)

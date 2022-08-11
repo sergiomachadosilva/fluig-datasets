@@ -1,0 +1,1 @@
+var INICIO = 1;
