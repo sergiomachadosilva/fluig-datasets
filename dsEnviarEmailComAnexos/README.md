@@ -1,7 +1,5 @@
 # Enviar e-mail com anexos no Fluig
 
-**Este dataset foi criado a patir de uma solução disponibilizada pela comunidade [Fluiggers](https://fluiggers.com.br/t/envio-de-e-mail-com-anexos/545).**
-
 ## Problema
 
 Em muitas situações é necessário que os envolvidos em um determinados processo, recebam determinados anexos em suas caixas de entradas.
@@ -89,3 +87,10 @@ Veja abaixo alguns exemplos de utilizanção deste dataset, onde fiz a chamada a
 - [Chamando através de outro dataset](dsEnviarEmail.js)
 - [Processo com rich editor](processo-exemplo01/)
 - [Processo com rich editor, componente de anexos e tabela pai e filho](dsEnviarEmailComAnexos.js) _Em breve_
+
+### Créditos
+
+**Este dataset foi criado a patir de uma solução disponibilizada pela comunidade [Fluiggers](https://fluiggers.com.br/t/envio-de-e-mail-com-anexos/545).**
+
+- [Igor Rodrigues](https://www.linkedin.com/in/igorgoesrodrigues/)
+- [Vinicius Silveira](https://www.linkedin.com/in/igorgoesrodrigues/)
