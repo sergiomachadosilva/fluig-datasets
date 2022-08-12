@@ -1,17 +1,17 @@
-# Enviar e-mail com anexos no Fluig
+# Envio de e-mail com anexos no Fluig
 
 ## Problema
 
 Em muitas situações é necessário que os envolvidos em um determinados processo, recebam determinados anexos em suas caixas de entradas.
-Quando o Fluig esta disponível para acesso externo, este problema pode ser facilmente resolvido enviando apenas o link público do arquivo atráves do método padrão de envios de e-mails, o método [notifier.notify](https://tdn.totvs.com/pages/releaseview.action?pageId=183730587).
+Quando o Fluig esta disponível para acesso externo, este problema pode ser facilmente resolvido enviando apenas o link público do arquivo atráves do método padrão de envios de e-mails, a função [notifier.notify](https://tdn.totvs.com/pages/releaseview.action?pageId=183730587).
 
 No entanto, dependendo da regra de negócio, será obrigatório que os envolvido recebam o arquivo físico em seu e-mail, e não somente o link dele.
 
-E aí nesta situação começam os problemas, pois não existe nenhuma configuração para o método notifier.notify que seja possível adicionar anexos. Com isso você deverá fazer o uso de APIs de terceiros. Ou então, como eu já fiz, desenvolver sua própria API utilizando alguma linguagem de programação onde seja possível realizar o envio de e-mail com anexos e consumir esta API dentro do Fluig.
+E aí nesta situação começam os problemas, pois não existe nenhuma configuração para a função notifier.notify que seja possível adicionar anexos. Com isso você deverá fazer o uso de APIs de terceiros. Ou então, como eu já fiz, desenvolver sua própria API utilizando alguma linguagem de programação onde seja possível realizar o envio de e-mail com anexos e consumir esta API dentro do Fluig.
 
 ## Solução
 
-Com este dataset será possível realizar o envio de e-mail com anexos sem depender de serviços de terceiros, abaixo vou listar alguns vantagens e desvantagens em relação ao método padrão notifier.notify.
+Com este dataset será possível realizar o envio de e-mail com anexos sem depender de serviços de terceiros, abaixo vou listar alguns vantagens e desvantagens em relação a função padrão notifier.notify.
 
 ### Vantagens
 
