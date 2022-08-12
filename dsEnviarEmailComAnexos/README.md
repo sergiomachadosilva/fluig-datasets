@@ -3,7 +3,7 @@
 ## Problema
 
 Em muitas situações é necessário que os envolvidos em um determinados processo, recebam determinados anexos em suas caixas de entradas.
-Quando o Fluig esta disponível para acesso externo, este problema pode ser facilmente resolvido enviando apenas o link público do arquivo atráves do método padrão de envios de e-mails, a função [notifier.notify](https://tdn.totvs.com/pages/releaseview.action?pageId=183730587).
+Quando o Fluig esta disponível para acesso externo, este problema pode ser facilmente resolvido enviando apenas o link público do arquivo atráves do método padrão de envios de e-mails, a função [notifier.notify](https://tdn.totvs.com/pages/releaseview.action?pageId=183730587#Personaliza%C3%A7%C3%A3odeemail-EnviodeE-mailPersonalizado).
 
 No entanto, dependendo da regra de negócio, será obrigatório que os envolvido recebam o arquivo físico em seu e-mail, e não somente o link dele.
 
