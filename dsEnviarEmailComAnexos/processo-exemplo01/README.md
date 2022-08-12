@@ -1,6 +1,6 @@
 Neste processo você poderá consultar como é realizado o envio do e-mail com anexos através de um evento de processo. Passando as informações dos campos do formulário para o dataset.
 
-E também poderá formatar o conteúdo do corpo do e-mail com o componente Rich Editor.
+E também poderá formatar o conteúdo do corpo do e-mail com o componente [Rich Editor](https://style.fluig.com/miscellaneous.html#rich-editor).
 
 ## Formulário
 
