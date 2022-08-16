@@ -36,7 +36,7 @@ function validateForm(form) {
             }
         }
 
-
+        // Se existir alguma mensagem no array de erros, lança uma exceção
         if (erros.length) {
             throw formatarErros(erros);
         }
