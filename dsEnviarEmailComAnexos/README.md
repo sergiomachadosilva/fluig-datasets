@@ -86,7 +86,7 @@ Veja abaixo alguns exemplos de utilizanção deste dataset, onde fiz a chamada a
 
 - [Chamando através de outro dataset](dsEnviarEmail.js)
 - [Processo com rich editor](processo-exemplo01/)
-- [Processo com rich editor, componente de anexos e tabela pai e filho](dsEnviarEmailComAnexos.js) _Em breve_
+- [Processo com rich editor, componente de anexos e tabela pai e filho](processo-exemplo01/)
 
 ### Créditos
 

@@ -1,0 +1,203 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+	<script src="/style-guide/js/fluig-style-guide-richeditor.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<script type="text/javascript" src="anexos.js" charset="utf-8"></script>
+	<script type="text/javascript" src="custom.js"></script>
+	
+</head>
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<input type="hidden" id="campoDescritor" name="campoDescritor" />
+			
+			<div class="page-header">
+				<h2>Envio de e-mail com anexos</h2>
+			</div>
+			
+			<div class="panel panel-info fs-xl-margin-top">
+				<div class="panel-heading fs-sm-padding-top fs-sm-padding-bottom">
+					<h3 class="panel-title">
+						<b>Detalhes do email</b>
+					</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+					        	<label class="control-label" for="emailDestinatario">Email do destinatário</label>
+								<input type="text" class="form-control" id="emailDestinatario" name="emailDestinatario" />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+					        	<label class="control-label" for="assuntoEmail">Assunto do email</label>
+								<input type="text" class="form-control" id="assuntoEmail" name="assuntoEmail" />
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<div class="checkbox" style="margin-top: 30px;">
+									<label><input type="checkbox" name="formatEmail" id="formatEmail">Conteúdo em texto plano?</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">Registro de Nascimento</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdRegistroNascimento" value="anexoRegistroNascimento" />
+										<input type="text" id="fnRegistroNascimento" name="fnRegistroNascimento" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">CPF</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdCpf" value="anexoCpf" />
+										<input type="text" id="fnCpf" name="fnCpf" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label">Foto</label>
+								<div class="componentAnexo">
+									<div class="input-group">
+										<input type="hidden" class="descAnexo" name="fdFoto" value="anexoFoto" />
+										<input type="text" id="fnFoto" name="fnFoto" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+									</div>
+									<div class="icones">
+										<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+											<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+											<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+										</button>
+										<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+											<i class="fluigicon fluigicon-download icon-sm"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 class="text-info">Outros documentos</h4>
+						</div>
+						<div class="col-md-12">
+							<div class="table-responsive">
+								<table tablename="tblDocumentos" class="table table-bordered" nodeletebutton=true noaddbutton=true>
+								    <thead class="fs-display-none">
+								        <tr>
+											<td></td>
+								            <td></td>
+											<td class="tdDeleteRow"></td>
+								        </tr>
+								    </thead>
+									<tbody>
+										<tr>
+											<td class="fs-v-align-middle fs-font-bold count" style="width: 1%;"></td>
+											<td>
+												<div class="row">
+													<div class="col-md-4">
+														<div class="form-group">
+															<label class="control-label">Descrição</label>
+															<input type="text" class="form-control input-sm" id="documentoDesc" name="documentoDesc" />
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="form-group">
+															<label class="control-label">Documento</label>
+															<div class="componentAnexo">
+																<div class="input-group">
+																	<input type="hidden" class="descAnexo" name="fdDocumento" />
+																	<input type="text" id="fnDocumento" name="fnDocumento" class="form-control inputAnexo input-sm" placeholder="Selecione um arquivo" readonly />
+																</div>
+																<div class="icones">
+																	<button type="button" class="btnUpFile btn btn-success btn-sm" data-acao="upload" onclick="anexo(event)" title="Selecionar">
+																		<i class="fluigicon fluigicon-file-upload icon-sm"></i>
+																	</button>
+																	<button style="display: none;" type="button" class="btnViewerFile btn btn-info btn-sm" data-acao="viewer" onclick="anexo(event)" title="Visualizar" disabled>
+																		<i class="fluigicon fluigicon-eye-open icon-sm"></i>
+																	</button>
+																	<button style="display: none;" type="button" class="btnDownloadFile btn btn-info btn-sm" data-acao="download" onclick="anexo(event)" title="Download" disabled>
+																		<i class="fluigicon fluigicon-download icon-sm"></i>
+																	</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="form-group">
+															<div class="checkbox" style="margin-top: 30px;">
+																<label><input type="checkbox" name="documentoEmail" id="documentoEmail">Enviar este documento por e-mail?</label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</td>
+											<td class="fs-v-align-middle fs-text-center tdDeleteRow" style="width: 1%;">
+												<div class="lixeira">
+													<i class="fluigicon fluigicon-trash icon-md fs-xs-padding fs-cursor-pointer fs-color-danger" title="Remover"  onclick="destroyRow(this)"></i>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+					       		</table>
+							</div>
+						</div>
+						<div class="col-md-12 btnAddNewRow">
+							<button class="btn btn-sm btn-success fs-lg-margin-bottom" onClick="addNewRow()">Novo</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 fs-sm-margin-top">
+							<div class="form-group">
+								<label class="control-label" for="corpoEmail">Corpo do email</label>
+								<textarea class="form-control" name="corpoEmail" id="corpoEmail"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+var INICIO = 1;
+var APROVACAO_2 = 2;
+var ENVIAR_EMAIL_4 = 4;
+var TRATAR_ERRO_10 = 10;
+var FINALIZADO_8 = 8;

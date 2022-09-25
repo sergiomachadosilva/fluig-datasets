@@ -1,0 +1,718 @@
+<list>
+  <ProcessDefinition>
+    <processDefinitionPK>
+      <companyId>1</companyId>
+      <processId>enviarEmailComAnexos</processId>
+    </processDefinitionPK>
+    <processDescription>Enviar e-mail com anexos</processDescription>
+    <instruction></instruction>
+    <active>true</active>
+    <publicProcess>false</publicProcess>
+    <volumeId>Default</volumeId>
+    <categoryId>Meus</categoryId>
+    <managerEngineAllocationId>Papel</managerEngineAllocationId>
+    <managerEngineAllocationConfiguration>&lt;AssignmentController&gt;&lt;Role&gt;admin&lt;/Role&gt;&lt;/AssignmentController&gt;</managerEngineAllocationConfiguration>
+    <snapshotFrequency>0</snapshotFrequency>
+    <baseDay>0</baseDay>
+    <baseMonth>0</baseMonth>
+    <periodId>Default</periodId>
+    <uniqueCardVersion>true</uniqueCardVersion>
+    <keyWord></keyWord>
+    <complementsLevel>1</complementsLevel>
+    <notifyRequisitionerComplements>true</notifyRequisitionerComplements>
+    <notifyManagerComplements>false</notifyManagerComplements>
+    <deadlineTime>0</deadlineTime>
+    <warningDeadlineTime>0</warningDeadlineTime>
+    <notifyAuthorityComplements>true</notifyAuthorityComplements>
+  </ProcessDefinition>
+  <ProcessDefinitionVersion>
+    <processDefinitionVersionPK>
+      <companyId>1</companyId>
+      <processId>Enviar e-mail com anexos</processId>
+      <version>32</version>
+    </processDefinitionVersionPK>
+    <versionDescription></versionDescription>
+    <formId>12</formId>
+    <editionMode>true</editionMode>
+    <updateAttachmentsVersion>false</updateAttachmentsVersion>
+    <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
+    <active>true</active>
+    <blockedVersion>false</blockedVersion>
+    <counterSign>false</counterSign>
+    <openInstances>0</openInstances>
+    <bpmnVersion>2</bpmnVersion>
+    <processStates/>
+    <favorito>false</favorito>
+    <inheritFormSecurity>false</inheritFormSecurity>
+    <mobileReady>false</mobileReady>
+  </ProcessDefinitionVersion>
+  <list>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>1</sequence>
+      </processStatePK>
+      <stateName>Início</stateName>
+      <stateDescription>Início</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>true</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>130</positionX>
+      <positionY>120</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>10</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </processStatePK>
+      <stateName>Aprovação</stateName>
+      <stateDescription>Aprovação</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Usuário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;User&gt;sergio.machado&lt;/User&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>260</positionX>
+      <positionY>107</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Enviar e-mail</stateName>
+      <stateDescription>Enviar e-mail</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>460</positionX>
+      <positionY>107</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>82</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>1</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>10</sequence>
+      </processStatePK>
+      <stateName>Tratar Erro</stateName>
+      <stateDescription>Tratar Erro</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Usuário</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssignmentController&gt;&lt;User&gt;sergio.machado&lt;/User&gt;&lt;/AssignmentController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>460</positionX>
+      <positionY>300</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>9</sequence>
+      </processStatePK>
+      <stateName>Intermediário</stateName>
+      <stateDescription>Intermediário</stateDescription>
+      <instruction>Evento intermediário do processo</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>1</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>560</positionX>
+      <positionY>157</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>43</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <parentSequence>4</parentSequence>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <sequence>8</sequence>
+      </processStatePK>
+      <stateName>Fim</stateName>
+      <stateDescription>Fim</stateDescription>
+      <instruction>Esta atividade indica que o processo terminado e que não ocorrerá nenhum tipo de pós processamento.</instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <selectColleague>0</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>1</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>680</positionX>
+      <positionY>120</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>68</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+    </ProcessState>
+  </list>
+  <list/>
+  <list>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <linkSequence>3</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>1</initialStateSequence>
+      <finalStateSequence>2</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <linkSequence>5</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <linkSequence>7</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>8</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <linkSequence>11</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>9</initialStateSequence>
+      <finalStateSequence>10</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+        <linkSequence>12</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>10</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+  </list>
+  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>atividades</eventId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>var INICIO = 1;&#xd;
+var APROVACAO_2 = 2;&#xd;
+var ENVIAR_EMAIL_4 = 4;&#xd;
+var TRATAR_ERRO_10 = 10;&#xd;
+var FINALIZADO_8 = 8;</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>funcoes</eventId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>/**&#xd;
+ * Retorna as propriedades de um documento&#xd;
+ * @param {string} fileDescription Parâmetro obrigatório, descrição do documento&#xd;
+ * @return {boolean|object} Caso o documento exista, retorna um objeto com as propriedades {id, versao, nomeArquivo}, &#xd;
+ caso não exista, retorna falso&#xd;
+ * @author Sérgio Machado&#xd;
+ */&#xd;
+function documentoDto(fileDescription) {&#xd;
+	var docs = hAPI.listAttachments();&#xd;
+	for (var i = 0; i &lt; docs.size(); i++) {&#xd;
+		var doc = docs.get(i);&#xd;
+		if (fileDescription == doc.getDocumentDescription()) {&#xd;
+			return { id: String(doc.getDocumentId()), versao: String(doc.getVersion()), nomeArquivo: String(doc.getPhisicalFile())};&#xd;
+		}&#xd;
+	}&#xd;
+	return false;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+/**&#xd;
+ * Retorna a extensão de um arquivo&#xd;
+ * @param {string} phisicalFile Parâmetro obrigatório, nome físico do arquivo&#xd;
+ * @return {string}&#xd;
+ * @author Sérgio Machado&#xd;
+ */&#xd;
+function obterExtensao(phisicalFile){&#xd;
+	var extensao = &quot;.&quot; + phisicalFile.split(&quot;.&quot;).pop();&#xd;
+	return extensao;&#xd;
+}&#xd;
+&#xd;
+&#xd;
+/**&#xd;
+ * Verifica se existe todos os documentos inseridos na tabela pai e filho na aba de anexos&#xd;
+ * @param {string[]} erros Parâmetro obrigatório, array com os erros&#xd;
+ * @return {void}&#xd;
+ * @author Sérgio Machado&#xd;
+ */&#xd;
+function documentosTabelaExiste(erros) {&#xd;
+	var indexes = hAPI.getChildrenIndexes(&quot;tblDocumentos&quot;);&#xd;
+	for (var i = 0; i &lt; indexes.length; i++) {&#xd;
+		var fileName = String(hAPI.getCardValue(&quot;fnDocumento___&quot; + indexes[i]));&#xd;
+		var fileDescription = String(hAPI.getCardValue(&quot;fdDocumento___&quot; + indexes[i]));&#xd;
+		&#xd;
+		if (fileName) {&#xd;
+			if (!documentoDto(fileDescription)) {&#xd;
+				erros.push(&quot;Não foi encontrado o anexo &lt;b&gt;&quot; + fileName + &quot;&lt;/b&gt; da linha &quot; + (i+1));&#xd;
+			}&#xd;
+		}&#xd;
+	}&#xd;
+}&#xd;
+</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeStateEntry</eventId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeStateEntry(sequenceId) {&#xd;
+&#xd;
+	try {&#xd;
+		var erros = [];&#xd;
+&#xd;
+		if (sequenceId == APROVACAO_2) {&#xd;
+&#xd;
+			var anexoRegNascFile = String(hAPI.getCardValue(&quot;fnRegistroNascimento&quot;));&#xd;
+			var anexoRegNascDesc = String(hAPI.getCardValue(&quot;fdRegistroNascimento&quot;));&#xd;
+&#xd;
+			var anexoCpfFile = String(hAPI.getCardValue(&quot;fnCpf&quot;));&#xd;
+			var anexoCpfDesc = String(hAPI.getCardValue(&quot;fdCpf&quot;));&#xd;
+&#xd;
+			var anexoFotoFile = String(hAPI.getCardValue(&quot;fnFoto&quot;));&#xd;
+			var anexoFotoDesc = String(hAPI.getCardValue(&quot;fdFoto&quot;));&#xd;
+&#xd;
+			if (anexoRegNascFile) {&#xd;
+				if (!documentoDto(anexoRegNascDesc)) {&#xd;
+					erros.push(&quot;Não foi encontrado o anexo &lt;b&gt;&quot; + anexoRegNascFile + &quot;&lt;/b&gt;&quot;);&#xd;
+				}&#xd;
+			}&#xd;
+&#xd;
+			if (anexoCpfFile) {&#xd;
+				if (!documentoDto(anexoCpfDesc)) {&#xd;
+					erros.push(&quot;Não foi encontrado o anexo &lt;b&gt;&quot; + anexoCpfFile + &quot;&lt;/b&gt;&quot;);&#xd;
+				}&#xd;
+			}&#xd;
+&#xd;
+			if (anexoFotoFile) {&#xd;
+				if (!documentoDto(anexoFotoDesc)) {&#xd;
+					erros.push(&quot;Não foi encontrado o anexo &lt;b&gt;&quot; + anexoFotoFile + &quot;&lt;/b&gt;&quot;);&#xd;
+				}&#xd;
+			}&#xd;
+			&#xd;
+			// Valida os documentos inseridos na tabela pai e filho se eles existem na aba de anexos&#xd;
+			documentosTabelaExiste(erros);&#xd;
+		}&#xd;
+&#xd;
+		// Se existir alguma mensagem no array de erros, lança uma exceção&#xd;
+		if (erros.length) {&#xd;
+			throw formatarErros(erros);&#xd;
+		}&#xd;
+&#xd;
+	} catch (err) {&#xd;
+		throw (&quot;&lt;br/&gt; function &lt;b&gt;&quot; + arguments.callee.name + &quot;&lt;/b&gt; =&gt; &quot; + err.toString());&#xd;
+	}&#xd;
+}&#xd;
+&#xd;
+/**&#xd;
+ * Formata os erros &#xd;
+ * @param {String[]} erros Parâmetro obrigatório, array com os erros&#xd;
+ * @returns {String} - Retorna uma string contendo todos os erros dentro de uma tag ul&#xd;
+ * @author Sérgio Machado&#xd;
+ */&#xd;
+function formatarErros(erros) {&#xd;
+	var strErros = &apos;&apos;;&#xd;
+	for (var i = 0; i &lt; erros.length; i++) {&#xd;
+		strErros += &apos;&lt;li style=&quot;margin-bottom: 10px;&quot;&gt;&apos; + erros[i] + &apos;&lt;/li&gt;&apos;;&#xd;
+	}&#xd;
+	var listErros = &apos;&lt;ul style=&quot;padding-left: 17px;color: red;list-style: disc;&quot;&gt;&apos; + strErros + &apos;&lt;/ul&gt;&lt;br/&gt;&apos;;&#xd;
+	return &apos;Favor informar os anexos obrigatórios:&lt;br/&gt;&lt;br/&gt;&apos; + listErros;&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>servicetask4</eventId>
+        <processId>enviarEmailComAnexos</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function servicetask4(attempt, message) {
+	
+	try {
+
+		var constraints = [];
+		var anexos = [];
+		var destinatario = hAPI.getCardValue(&quot;emailDestinatario&quot;);
+		var assunto = hAPI.getCardValue(&quot;assuntoEmail&quot;);
+		var conteudo = hAPI.getCardValue(&quot;corpoEmail&quot;);
+		var textoPlano = hAPI.getCardValue(&quot;formatEmail&quot;) == &quot;on&quot; ? true : false;
+		
+		
+		
+		// Adiciona anexo Registro de nascimento
+		var anexoRegNascFile = String(hAPI.getCardValue(&quot;fnRegistroNascimento&quot;));
+		var anexoRegNascDesc = String(hAPI.getCardValue(&quot;fdRegistroNascimento&quot;));
+		
+		// Verifica se o campo esta preenchido
+		if (anexoRegNascFile) {
+			var objetoAnexo = documentoDto(anexoRegNascDesc)
+			// Verifica se o documento existe
+			if (objetoAnexo) {
+				// Se existir, adiciona a propriedade descArquivo e adiciona o objeto no array de anexos
+				objetoAnexo.descArquivo = &quot;Registro de Nascimento&quot; + obterExtensao(objetoAnexo.nomeArquivo);
+				anexos.push(objetoAnexo)
+			}
+		}
+
+
+		// Adiciona anexo CPF
+		var anexoCpfFile = String(hAPI.getCardValue(&quot;fnCpf&quot;));
+		var anexoCpfDesc = String(hAPI.getCardValue(&quot;fdCpf&quot;));
+		
+		// Verifica se o campo esta preenchido
+		if (anexoCpfFile) {
+			var objetoAnexo = documentoDto(anexoCpfDesc)
+			// Verifica se o documento existe
+			if (objetoAnexo) {
+				// Se existir, adiciona a propriedade descArquivo e adiciona o objeto no array de anexos
+				objetoAnexo.descArquivo = &quot;CPF&quot; + obterExtensao(objetoAnexo.nomeArquivo);
+				anexos.push(objetoAnexo)
+			}
+		}
+
+
+		// Adiciona anexo Foto
+		var anexoFotoFile = String(hAPI.getCardValue(&quot;fnFoto&quot;));
+		var anexoFotoDesc = String(hAPI.getCardValue(&quot;fdFoto&quot;));
+		
+		// Verifica se o campo esta preenchido
+		if (anexoFotoFile) {
+			var objetoAnexo = documentoDto(anexoFotoDesc)
+			// Verifica se o documento existe
+			if (objetoAnexo) {
+				// Se existir, adiciona a propriedade descArquivo e adiciona o objeto no array de anexos
+				objetoAnexo.descArquivo = &quot;Foto&quot; + obterExtensao(objetoAnexo.nomeArquivo);
+				anexos.push(objetoAnexo)
+			}
+		}
+		
+			
+		// Percorre a tabela pai e filho
+		var indexes = hAPI.getChildrenIndexes(&quot;tblDocumentos&quot;);
+		
+		for (var i = 0; i &lt; indexes.length; i++) {
+			var enviarEmailArquivo = String(hAPI.getCardValue(&quot;documentoEmail___&quot; + indexes[i]));
+			var anexoDesc = String(hAPI.getCardValue(&quot;fdDocumento___&quot; + indexes[i]));
+			var descricao = String(hAPI.getCardValue(&quot;documentoDesc___&quot; + indexes[i]));
+		
+			// Verifica se o campo checkbox da tabela pai e filho esta marcado
+			if(enviarEmailArquivo){
+				var objetoAnexo = documentoDto(anexoDesc)
+				// Verifica se o documento existe
+				if (objetoAnexo) {
+					// Se existir, adiciona a propriedade descArquivo e adiciona o objeto no array de anexos
+					objetoAnexo.descArquivo = (descricao + obterExtensao(objetoAnexo.nomeArquivo));
+					anexos.push(objetoAnexo)
+				}
+			}
+		}
+		
+ 
+		constraints.push(DatasetFactory.createConstraint(&quot;nomeRemetente&quot;, &quot;Empresa XPTO&quot;, null, ConstraintType.MUST));
+		constraints.push(DatasetFactory.createConstraint(&quot;destinatario&quot;, destinatario, null, ConstraintType.MUST));
+		constraints.push(DatasetFactory.createConstraint(&quot;assunto&quot;, assunto, null, ConstraintType.MUST));
+		constraints.push(DatasetFactory.createConstraint(&quot;conteudo&quot;, conteudo, null, ConstraintType.MUST));
+		constraints.push(DatasetFactory.createConstraint(&quot;textoPlano&quot;, textoPlano, null, ConstraintType.MUST));
+		constraints.push(DatasetFactory.createConstraint(&quot;anexos&quot;, JSON.stringify(anexos), null, ConstraintType.MUST));
+
+		var dataset = DatasetFactory.getDataset(&quot;dsEnviarEmailComAnexos&quot;, null, constraints, null);
+		
+		var retorno = dataset.getValue(0, &quot;STATUS&quot;);
+		
+		if(retorno != &quot;OK&quot;){
+			throw retorno;
+		}
+ 
+	} catch (err) {
+		throw (&quot;function &quot; + arguments.callee.name + &quot; =&gt; &quot; + err.toString());
+	}
+}
+
+</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+  <list>
+    <ProcessStateService>
+      <companyId>1</companyId>
+      <processId>enviarEmailComAnexos</processId>
+      <version>1</version>
+      <sequence>4</sequence>
+      <attempts>0</attempts>
+      <sucessFullMessage>Integração executada com sucesso</sucessFullMessage>
+      <serviceName></serviceName>
+      <frequency>1</frequency>
+      <frequencyType>0</frequencyType>
+    </ProcessStateService>
+  </list>
+  <list/>
+  <list/>
+  <list/>
+  <list/>
+</list>
