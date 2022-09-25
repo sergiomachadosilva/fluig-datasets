@@ -2,7 +2,7 @@ Projeto de exemplo de como enviar anexos enviados através do componente de anex
 
 ## Formulário
 
-![Formulário](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsEnviarEmailComAnexos/processo-exemplo01/imagem_formulario.png)
+![Formulário](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsEnviarEmailComAnexos/processo-exemplo02/imagem_formulario.png)
 
 ## Diagrama do processo
 
