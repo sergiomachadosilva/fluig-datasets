@@ -55,8 +55,8 @@ A constraint anexos receberá um array de objetos, onde cada objeto deverá cont
 
 | Propriedade | Descrição                                              | Formato          | Obrigatório |
 | ----------- | ------------------------------------------------------ | ---------------- | ----------- |
-| id          | Id do arquivo                                          | Number ou string | Sim         |
-| versao      | Versão do arquivo                                      | Number ou string | Sim         |
+| id          | Id do arquivo                                          | Number ou String | Sim         |
+| versao      | Versão do arquivo                                      | Number ou String | Sim         |
 | nomeArquivo | Nome físico do arquivo                                 | String           | Sim         |
 | descArquivo | Nome do arquivo com a extensão que aparecerá no e-mail | String           | Não         |
 
@@ -66,7 +66,7 @@ Para adicionar um arquivo que esteja em base64, o objeto deverá conter as segui
 
 | Propriedade  | Descrição                      | Formato | Obrigatório |
 | ------------ | ------------------------------ | ------- | ----------- |
-| stringBase64 | Base64 do arquivo              | string  | Sim         |
+| stringBase64 | Base64 do arquivo              | String  | Sim         |
 | nomeArquivo  | Nome do arquivo com a extensão | String  | Sim         |
 | tipo         | Deve ser igual a "base64"      | String  | Sim         |
 
