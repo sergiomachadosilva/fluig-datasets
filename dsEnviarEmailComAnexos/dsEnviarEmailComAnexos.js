@@ -151,7 +151,11 @@ function enviarEmail(nomeRemetente, assunto, conteudo, textoPlano, destinatario,
         // Adiciona os anexos que serão enviados no e-mail
         for (var i = 0; i < anexos.length; i++) {
             var anexo = anexos[i];
-            adicionaAnexo(multipart, anexo.id, anexo.versao, anexo.nomeArquivo, anexo.descArquivo);
+            if (anexos[i].tipo == "base64") {
+                adicionaAnexoBase64(multipart, anexo.stringBase64, anexo.nomeArquivo);
+            } else {
+                adicionaAnexo(multipart, anexo.id, anexo.versao, anexo.nomeArquivo, anexo.descArquivo);
+            }
         }
 
 
@@ -201,6 +205,27 @@ function adicionaAnexo(multipart, id, versao, nomeArquivo, descArquivo) {
         attachment.setFileName(descArquivo ? descArquivo : nomeArquivo);
         multipart.addBodyPart(attachment);
 
+    } catch (err) {
+        throw ("function " + arguments.callee.name + " => " + err.toString());
+    }
+}
+
+/**
+ * Adiciona anexo ao email a partir de uma string base64
+ * @param {object} multipart Parâmetro obrigatório
+ * @param {string} stringBase64 Parâmetro obrigatório, Base64 do arquivo
+ * @param {string} nomeArquivo Parâmetro obrigatório, Nome do arquivo com a extensão
+ * @return {void} 
+ * @author Sérgio Machado
+ */
+function adicionaAnexoBase64(multipart, stringBase64, nomeArquivo) {
+    try {
+        var byteArray = java.util.Base64.getDecoder().decode(new String(stringBase64));
+        var attachment = new javax.mail.internet.MimeBodyPart();
+        attachment.setDataHandler(new javax.activation.DataHandler(new javax.mail.util.ByteArrayDataSource(byteArray, "application/octet-stream")));
+        attachment.setDisposition(javax.mail.internet.MimeBodyPart.ATTACHMENT);
+        attachment.setFileName(nomeArquivo);
+        multipart.addBodyPart(attachment);
     } catch (err) {
         throw ("function " + arguments.callee.name + " => " + err.toString());
     }

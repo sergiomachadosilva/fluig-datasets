@@ -60,6 +60,16 @@ A constraint anexos receberá um array de objetos, onde cada objeto deverá cont
 | nomeArquivo | Nome físico do arquivo                                 | String           | Sim         |
 | descArquivo | Nome do arquivo com a extensão que aparecerá no e-mail | String           | Não         |
 
+### Adicionando um anexo a partir de um base64
+
+Para adicionar um arquivo que esteja em base64, objeto deverá conter as seguintes propriedades:
+
+| Propriedade  | Descrição                      | Formato | Obrigatório |
+| ------------ | ------------------------------ | ------- | ----------- |
+| stringBase64 | Base64 do arquivo              | string  | Sim         |
+| nomeArquivo  | Nome do arquivo com a extensão | String  | Sim         |
+| tipo         | Deve ser igual a "base64"      | String  | Sim         |
+
 Na imagem abaixo esta um exemplo da chamada do dataset, lembrando que o array de cópia e cópia oculta, deverão ser informados nas constraints no formato string, dessa forma deverá utilizar _JSON.stringify()_.
 
 ![Exemplo](https://github.com/sergiomachadosilva/fluig-datasets/blob/master/dsEnviarEmailComAnexos/exemplo_01.png)
