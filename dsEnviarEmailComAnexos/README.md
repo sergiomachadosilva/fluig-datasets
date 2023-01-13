@@ -62,7 +62,7 @@ A constraint anexos receberá um array de objetos, onde cada objeto deverá cont
 
 ### Adicionando um anexo a partir de um base64
 
-Para adicionar um arquivo que esteja em base64, objeto deverá conter as seguintes propriedades:
+Para adicionar um arquivo que esteja em base64, o objeto deverá conter as seguintes propriedades:
 
 | Propriedade  | Descrição                      | Formato | Obrigatório |
 | ------------ | ------------------------------ | ------- | ----------- |
