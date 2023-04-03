@@ -1,0 +1,89 @@
+<#compress>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		h2{
+			color: #333;
+		}
+	</style>
+	
+	<!-- Variáveis de formatação para uso das tabelas -->
+	<#assign thead = "border:solid 1px #ccc; font-weight:bold; padding:10px 5px 10px 5px;">
+	<#assign td = "border:solid 1px #ccc; padding:5px;font-size: .9em;">
+	<#assign zebra_odd = "">
+	<#assign zebra_even = "background-color: #f6f6f6;">
+	
+</head>
+<body style="margin:0; padding:0;">
+	<table classs="corpo" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td align="center" valign="top">
+							<img src="${logo!''}" style="display: block;width:100%;"/>
+						</td>
+					</tr>
+					<tr><td height="20">&nbsp;</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td align="center" valign="top">
+							<h2>Estados do Brasil</h2>
+						</td>
+					</tr>
+					<tr>
+						<td align="left" valign="top">
+							<p>O Brasil, um vasto país sul-americano, estende-se da Bacia Amazônica, no norte, até os vinhedos e as gigantescas Cataratas do Iguaçu, no sul. O Rio de Janeiro, simbolizado pela sua estátua de 38 metros de altura do Cristo Redentor, situada no topo do Corcovado, é famoso pelas movimentadas praias de Copacabana e Ipanema, bem como pelo imenso e animado Carnaval, com desfiles de carros alegóricos, fantasias extravagantes e samba. ― <b><i>Google</i></b></p>
+						</td>
+					</tr>
+					<tr><td height="20">&nbsp;</td></tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" width="100%" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+					<thead>
+						<tr>
+							<th align="center" valign="top" style="${thead}">#</th>
+							<th align="center" valign="top" style="${thead}">Nome</th>
+							<th align="center" valign="top" style="${thead}">Sigla</th>
+						</tr>
+					</thead>
+					<tbody>
+					<#list estados as estado>
+						<tr <#if estado?index % 2 == 0>style="${zebra_even}"<#else>style="${zebra_odd}"</#if>>
+							<td align="center" valign="top" style="${td}">${estado?index + 1}</td>
+							<td align="center" valign="top" style="${td}">${estado.nome!''} </td>
+							<td align="center" valign="top" style="${td}">${estado.sigla!''}</td>
+						</tr>
+					</#list>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" width="100%" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr><td height="20">&nbsp;</td></tr>	
+					<tr>
+						<td align="center" valign="middle">
+							<span style="font-size: 11px;"><b>Desenvolvido por</b>: ${nome!''} ${sobrenome!''}</span>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+</#compress>
